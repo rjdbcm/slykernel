@@ -1,0 +1,43 @@
+--****O* CHANGELOG/2011-03-16
+-- AUTHOR
+-- Ross Duff
+-- DATE
+-- 2011-03-16 16:56:40
+-- CHANGES
+-- Started Changelog.
+-- Made Sly's last chance handler more portable.
+-- Added Gameboy Advance implementation specific libraries.
+-- Added platform specific patches and makefile system.
+-- Added more documentation.
+-- Added derived Volatile types to binary_types.ads
+--***
+
+--****O* CHANGELOG/2011-03-18
+-- AUTHOR
+-- Ross Duff
+-- DATE
+-- 2011-03-18 16:31:12
+-- CHANGES
+-- Added Makefile for GBA target.
+-- Added Patches for GBA target.
+--***
+
+--****O* CHANGELOG/2011-03-22
+-- AUTHOR
+-- Ross Duff
+-- DATE
+-- 2011-03-22 18:52:06
+-- CHANGES
+-- lib/sly_graphics_kit/sly_graphics_kit-arm-gba.ads renamed to lib/sly_graphics_kit/sly_graphics_kit-gba.ads
+-- Added the rest of the GBA registers to the SGK.
+--***
+
+--****O* CHANGELOG/2011-03-24
+-- AUTHOR
+-- Ross Duff
+-- DATE
+-- 2011-03-24 16:39:12
+-- CHANGES
+-- Added more x86 VGA code.
+-- Added more x86 TUI functions.
+--***

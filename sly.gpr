@@ -1,0 +1,20 @@
+project Sly is
+
+   for Languages use ("Ada", "C", "Makefile", "X86 Asm");
+
+   package Builder is
+   end Builder;
+
+   package Ide is
+      for Vcs_Kind use "Subversion";
+      for Vcs_Repository_Root use "https://slykernel.svn.sourceforge.net/svnroot/slykernel ";
+   end Ide;
+
+   package Compiler is
+      for Local_Configuration_Pragmas use "local.pragmas";
+   end Compiler;
+
+   for Source_Dirs use ("./**");
+
+end Sly;
+
