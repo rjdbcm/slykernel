@@ -1,0 +1,27 @@
+*** kernel.adb	2011-03-11 12:11:38.000000000 -0600
+--- arch/x86/kernel.adb	2011-03-11 12:23:51.000000000 -0600
+***************
+*** 14,24 ****
+  --    GNU General Public License for more details.                           --
+  --                                                                           --
+  --    You should have received a copy of the GNU General Public License      --
+  --    along with the Sly Kernel.  If not, see <http://www.gnu.org/licenses/>.--
+  -------------------------------------------------------------------------------
+! 
+  package body Kernel is
+  procedure Kernel_Main(magic : in Integer) is
+     begin
+  
+
+--- 14,24 ----
+  --    GNU General Public License for more details.                           --
+  --                                                                           --
+  --    You should have received a copy of the GNU General Public License      --
+  --    along with the Sly Kernel.  If not, see <http://www.gnu.org/licenses/>.--
+  -------------------------------------------------------------------------------
+! with x86io; use x86io;
+  package body Kernel is
+  procedure Kernel_Main(magic : in Integer) is
+     begin
+  
+

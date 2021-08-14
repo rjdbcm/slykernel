@@ -1,0 +1,36 @@
+   type VBE_Controller_Info is
+   record
+      Signature    : Char_Array(4);
+      Version      : Word;
+      OEM_String   : Word;
+      Capabilities : Char_Array(4);
+      Video_Modes  : DWord;
+      Total_Memory : Word;
+   end record;
+
+   type VBE_Mode_Info is
+   record
+      Attributes   : Word;
+      WinA, WinB   : Byte;
+      Granularity  : Word;
+      Win_Size     : Word;
+      SegA, SegB   : Word;
+      VBE_Far      : Ptr_To_VBE_Function;
+      Pitch        : Word;
+      X_Res, Y_Res : Word;
+
+      Wchar, Ychar, planes, bpp, banks     : Byte;
+      Memory_Model, Bank_Size, Image_Pages : Byte;
+
+      Reserved0 : Byte;
+
+      Red_Mask, Red_Position     : Byte;
+      Green_Mask, Green_Position : Byte;
+      Blue_Mask, Blue_Position   : Byte;
+      RSV_Mask, RSV_Position     : Byte;
+      Direct_Color_Attributes    : Byte;
+
+      Physical_Base : Dword;
+      Reserved1     : Dword;
+      Reserved2     : Word;
+   end record;

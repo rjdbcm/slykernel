@@ -1,0 +1,27 @@
+*** sly_graphics_kit.adb	2011-03-01 09:33:26.000000000 -0600
+--- sly_graphics_kit.x86.adb	2011-03-01 09:33:50.000000000 -0600
+***************
+*** 14,24 ****
+  --    GNU General Public License for more details.                           --
+  --                                                                           --
+  --    You should have received a copy of the GNU General Public License      --
+  --    along with the Sly Kernel.  If not, see <http://www.gnu.org/licenses/>.--
+  -------------------------------------------------------------------------------
+! 
+  package body Sly_Graphics_Kit is
+  
+     procedure Draw_Line(X1 : in out Integer; X2 : Integer; Y1 : in out Integer;
+                         Y2 : Integer) is
+        DX  : Integer;
+--- 14,24 ----
+  --    GNU General Public License for more details.                           --
+  --                                                                           --
+  --    You should have received a copy of the GNU General Public License      --
+  --    along with the Sly Kernel.  If not, see <http://www.gnu.org/licenses/>.--
+  -------------------------------------------------------------------------------
+! with Sly_Graphics_Kit.x86; use Sly_Graphics_Kit.x86;
+  package body Sly_Graphics_Kit is
+  
+     procedure Draw_Line(X1 : in out Integer; X2 : Integer; Y1 : in out Integer;
+                         Y2 : Integer) is
+        DX  : Integer;
