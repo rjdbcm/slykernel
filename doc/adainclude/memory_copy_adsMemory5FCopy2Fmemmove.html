@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-type" content="text/html; charset=ISO-8859-1" />
+<link rel="stylesheet" href="../robodoc.css" type="text/css" />
+<script src="../robodoc.js"></script>
+<title>memory_copy.ads</title>
+<!-- Source: ./adainclude/memory_copy.ads -->
+<!-- Generated with ROBODoc Version 4.99.44 (Jan 31 2021) -->
+</head>
+<body>
+<div id="logo">
+<a name="robo_top_of_doc"></a>
+</div> <!-- logo -->
+<div id="navigation">
+<a class="menuitem" href="../robo_library.html#robo_top_of_doc">Library</a></div> <!-- navigation -->
+<div id="content">
+<hr />
+<a name="Memory5fCopy2fmemmove"></a>
+<a name="robo3"></a><h2>Memory_Copy/memmove [ Library ]</h2>
+
+<p class="item_name">NAME</p>
+<pre> <strong>memmove</strong>
+</pre>
+<p class="item_name">FUNCTION</p>
+<p> Copies N storage units from area starting at S2 to area starting
+ at S1 without any check for buffer overflow. The difference between
+ this <strong>memmove</strong> and <a href="./memory_copy_adsMemory5FCopy2Fmemcpy.html#robo2">memcpy</a> is that with <strong>memmove</strong>, the storage areas may
+ overlap (forwards or backwards) and the result is correct (i.e. it
+ is as if S2 is first moved to a temporary area, and then this area
+ is copied to S1 in a separate step).
+</p>
+<p class="item_name">INPUTS</p>
+<pre> Dest := Address to move data to.
+ Src  := Address to move data from.
+ N    := Number of bytes to move.
+</pre>
+<p class="item_name">SEE ALSO</p>
+<pre> Memory_Copy/<a href="./memory_copy_adsMemory5FCopy2Fmemcpy.html#robo2">memcpy</a>
+</pre>
+
+</div> <!-- content -->
+<div id="footer">
+<p>Generated from ./adainclude/memory_copy.ads with <a href="http://www.xs4all.nl/~rfsber/Robo/robodoc.html">ROBODoc</a> V4.99.44 on 2021-08-14 17:33:02</p>
+</div> <!-- footer -->
+</body>
+</html>
